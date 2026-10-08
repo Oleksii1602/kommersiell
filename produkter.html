@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Handla cykeltillbehör online hos VeloFix. Belysning, lås och pumpar.">
+  <title>Produkter | VeloFix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/produkter.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navigering -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow" aria-label="Huvudmeny">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 text-warning" href="index.html">🚲 VeloFix</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navKommersiell" aria-controls="navKommersiell" aria-expanded="false" aria-label="Öppna meny">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navKommersiell">
+          <ul class="navbar-nav ms-auto align-items-lg-center fs-5">
+            <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="produkter.html">Produkter</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#boka">Boka Service</a></li>
+            <li class="nav-item ms-lg-3 my-2 my-lg-0">
+              <button class="btn btn-warning position-relative fw-bold" id="cartBtn" type="button">
+                🛒 Varukorg (<span id="cartCount">0</span>)
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Produktsida -->
+  <main class="container my-5">
+    <h1 class="mb-4 text-center fw-bold">Vårt utvalda sortiment</h1>
+    <p class="text-center text-muted col-lg-6 mx-auto mb-5">Högkvalitativa cykeltillbehör anpassade för svenskt väder och daglig pendling.</p>
+
+    <div class="row g-4">
+      
+      <!-- Produkt 1 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/Lampa.jpg" class="card-img-top product-img" alt="USB-laddningsbar LED-cykellampa fram">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5 fw-bold">LED Cykellampa Fram</h2>
+            <p class="card-text text-muted">Laddningsbar via USB med stark ljusstyrka och tre olika ljuslägen.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+              <span class="fs-4 fw-bold text-dark">299 kr</span>
+              <button class="btn btn-primary add-to-cart-btn" data-product="LED Cykellampa">Lägg i varukorg</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produkt 2 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/Lås.jpg" class="card-img-top product-img" alt="Kraftigt cykellås i härdat stål">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5 fw-bold">Kättinglås Pro</h2>
+            <p class="card-text text-muted">Härdat stål med tygöverdrag för maximalt stöldskydd och skonsam användning.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+              <span class="fs-4 fw-bold text-dark">449 kr</span>
+              <button class="btn btn-primary add-to-cart-btn" data-product="Kättinglås Pro">Lägg i varukorg</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produkt 3 -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="img/Pump.jpg" class="card-img-top product-img" alt="Kompakt minipump i aluminium fäst på cykelram">
+          <div class="card-body d-flex flex-column">
+            <h2 class="card-title h5 fw-bold">Aluminium Minipump</h2>
+            <p class="card-text text-muted">Smidig och lätt rammonterad pump som passar både Presta- och Schrader-ventiler.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+              <span class="fs-4 fw-bold text-dark">199 kr</span>
+              <button class="btn btn-primary add-to-cart-btn" data-product="Aluminium Minipump">Lägg i varukorg</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 VeloFix AB – Kommersiellt skolprojekt.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/produkter.js"></script>
+</body>
+</html>
